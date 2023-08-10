@@ -45,13 +45,18 @@ function setup() {
     var img = boatSpritesheet.get(pos.x, pos.y, pos.w, pos.h);
     boatAnimation.push(img);
   }
-
-
-  var waterSplashFrames = waterSplashSpritedata.frames;
+var waterSplashFrames = waterSplashSpritedata.frames;
   for (var i = 0; i < waterSplashFrames.length; i++) {
     var pos = waterSplashFrames[i].position;
     var img = waterSplashSpritesheet.get(pos.x, pos.y, pos.w, pos.h);
     waterSplashAnimation.push(img);
+  }
+
+  var brokenBoatFrames = brokenBoatSpritedata.frames;
+  for (var i = 0; i < brokenBoatFrames.length; i++) {
+    var pos =brokenBoatFrames[i].position;
+    var img = brokenBoatSpritesheet.get(pos.x, pos.y, pos.w, pos.h);
+    brokenBoatAnimation.push(img);
   }
 }
 
